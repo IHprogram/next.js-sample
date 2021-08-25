@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 export default function Home() {
   return (
 
-    <Layout></Layout>
+    <Layout children={1}></Layout>
 
     /* <footer>
       <a
