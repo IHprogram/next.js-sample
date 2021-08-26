@@ -11,16 +11,18 @@ export default function Layout({ children, title = "HP by Nextjs" }) {
         <title>{title}</title>
       </Head>
 
-      <p>Hello Next.js</p>
       <header>
         <nav className="bg-gray-800 w-screen">
-          <Link href="/">
-            <div className="flex items-center pl-8 h-14">
-              <div className="flex space-x-4">
+          <div className="flex items-center pl-8 h-14">
+            <div className="flex space-x-4">
+              <Link href="/">
                 <a className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded">Home</a>
-              </div>
+              </Link>
+              <Link href="/about">
+                <a className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded">About</a>
+              </Link>
             </div>
-          </Link>
+          </div>
         </nav>
       </header>
       <main className="flex flex-1 justify-center items-center flex-col w-screen">
