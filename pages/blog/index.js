@@ -10,7 +10,7 @@ const Blog = (posts) => {
     <div>
       <Layout title="Blog">
         <ul className="m-10">
-          {posts.length > 0 && posts.posts.map((post) => <Post key={post.id} post={post} />)}
+          {posts && posts.posts.map((post) => <Post key={post.id} post={post} />)}
         </ul>
       </Layout>
     </div>
