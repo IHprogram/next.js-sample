@@ -15,6 +15,10 @@ export default function Post({ post }) {
       </p>
       <p className="mb-8 text-xl font-bold">{post.title}</p>
       <p className="px-10">{post.body}</p>
+
+      <Link href="/blog">
+        <a>ブログ一覧へ戻る</a>
+      </Link>
     </Layout>
   )
 }
